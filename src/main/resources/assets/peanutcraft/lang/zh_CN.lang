@@ -1,0 +1,14 @@
+itemGroup.peanutCraft=花生工艺
+item.peanut.name=花生
+item.peanutKernel.name=花生仁
+item.peanutShell.name=花生壳
+item.cookedPeanut.name=熟花生
+item.cookedPeanutKernel.name=熟花生仁
+item.plantPeanut.name=花生植株
+item.peanutVine.name=花生藤
+item.jue.name=镢
+tile.woodenStick.name=木箱
+tile.peanutShellBlock.name=花生壳块
+tile.peanutShellBlockW.name=压缩花生壳块
+tile.peanutShellBlockS.name=硬化花生壳块
+tile.peanutShellBlockI.name=强化花生壳块

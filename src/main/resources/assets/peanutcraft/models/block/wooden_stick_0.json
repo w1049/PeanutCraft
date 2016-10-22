@@ -1,0 +1,130 @@
+{
+    "__createdwith": "opl's Model Creator",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "blocks/planks_oak",
+        "planks_oak": "blocks/planks_oak"
+    },
+    "elements": [
+        {
+            "from": [0,0,0],
+            "to": [15,16,1],
+            "faces": {
+                "up": {
+                    "texture": "#planks_oak"
+                },
+                "down": {
+                    "texture": "#planks_oak"
+                },
+                "west": {
+                    "texture": "#planks_oak"
+                },
+                "east": {
+                    "texture": "#planks_oak"
+                },
+                "north": {
+                    "texture": "#planks_oak"
+                },
+                "south": {
+                    "texture": "#planks_oak"
+                }
+            }
+        },
+        {
+            "from": [0,0,1],
+            "to": [1,16,16],
+            "faces": {
+                "up": {
+                    "texture": "#planks_oak"
+                },
+                "down": {
+                    "texture": "#planks_oak"
+                },
+                "west": {
+                    "texture": "#planks_oak"
+                },
+                "east": {
+                    "texture": "#planks_oak"
+                },
+                "north": {
+                    "texture": "#planks_oak"
+                },
+                "south": {
+                    "texture": "#planks_oak"
+                }
+            }
+        },
+        {
+            "from": [15,0,0],
+            "to": [16,16,15],
+            "faces": {
+                "up": {
+                    "texture": "#planks_oak"
+                },
+                "down": {
+                    "texture": "#planks_oak"
+                },
+                "west": {
+                    "texture": "#planks_oak"
+                },
+                "east": {
+                    "texture": "#planks_oak"
+                },
+                "north": {
+                    "texture": "#planks_oak"
+                },
+                "south": {
+                    "texture": "#planks_oak"
+                }
+            }
+        },
+        {
+            "from": [1,0,15],
+            "to": [16,16,16],
+            "faces": {
+                "up": {
+                    "texture": "#planks_oak"
+                },
+                "down": {
+                    "texture": "#planks_oak"
+                },
+                "west": {
+                    "texture": "#planks_oak"
+                },
+                "east": {
+                    "texture": "#planks_oak"
+                },
+                "north": {
+                    "texture": "#planks_oak"
+                },
+                "south": {
+                    "texture": "#planks_oak"
+                }
+            }
+        },
+        {
+            "from": [1,0,1],
+            "to": [15,1,15],
+            "faces": {
+                "up": {
+                    "texture": "#planks_oak"
+                },
+                "down": {
+                    "texture": "#planks_oak"
+                },
+                "west": {
+                    "texture": "#planks_oak"
+                },
+                "east": {
+                    "texture": "#planks_oak"
+                },
+                "north": {
+                    "texture": "#planks_oak"
+                },
+                "south": {
+                    "texture": "#planks_oak"
+                }
+            }
+        }
+    ]
+}
