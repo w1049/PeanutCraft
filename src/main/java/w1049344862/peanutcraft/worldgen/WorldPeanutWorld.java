@@ -1,9 +1,17 @@
 package w1049344862.peanutcraft.worldgen;
 
+import java.util.Random;
+
+import net.minecraft.block.BlockPortal;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.Entity;
+import net.minecraft.init.Blocks;
+import net.minecraft.util.BlockPos;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.MathHelper;
 import net.minecraft.world.Teleporter;
 import net.minecraft.world.WorldProvider;
 import net.minecraft.world.WorldServer;
-import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.biome.WorldChunkManagerHell;
 import net.minecraft.world.chunk.IChunkProvider;
 
@@ -24,8 +32,6 @@ public class WorldPeanutWorld extends WorldProvider {
 	@Override
 	public void registerWorldChunkManager() {
 		this.worldChunkMgr = new WorldChunkManagerHell(WorldBiomeLoader.peanutShellPlains, 0);
-		this.isHellWorld = true;
-		this.hasNoSky = true;
 		this.dimensionId = WorldLoader.PEANUTDIMID;
 	}
 	
@@ -43,10 +49,4 @@ public class WorldPeanutWorld extends WorldProvider {
 		}
 	}
 
-	public static class TeleporterPeanut extends Teleporter {
-
-		public TeleporterPeanut(WorldServer worldIn) {
-			super(worldIn);
-		}
-	}
 }

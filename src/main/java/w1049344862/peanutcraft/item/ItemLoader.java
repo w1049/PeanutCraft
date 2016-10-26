@@ -7,6 +7,7 @@ import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameData;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -14,6 +15,9 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemLoader {
+	//工具材质
+	 public static final Item.ToolMaterial FUHEBAN = EnumHelper.addToolMaterial("FUHEBAN",3, 501, 9, 3, 15);
+	// 工具材质	
 	public static Item peanut = new ItemPeanut();
 	public static Item peanutKernel = new ItemPeanutKernel();
 	public static Item peanutShell = new ItemPeanutShell();
@@ -24,12 +28,16 @@ public class ItemLoader {
 	public static ItemSpade jue = new ItemToolJue();
 	public static ItemAxe sAxe = new ItemToolAxe.S();
 	public static ItemAxe iAxe = new ItemToolAxe.I();
+	public static ItemAxe fAxe = new ItemToolAxe.F();
 	public static ItemPickaxe sPickaxe = new ItemToolPickaxe.S();
 	public static ItemPickaxe iPickaxe = new ItemToolPickaxe.I();
+	public static ItemPickaxe fPickaxe = new ItemToolPickaxe.F();
 	public static ItemSword sSword = new ItemToolSword.S();
 	public static ItemSword iSword = new ItemToolSword.I();
+	public static ItemSword fSword = new ItemToolSword.F();
 	public static ItemSpade sSpade = new ItemToolSpade.S();
 	public static ItemSpade iSpade = new ItemToolSpade.I();
+	public static ItemSpade fSpade = new ItemToolSpade.F();
 
 	public ItemLoader(FMLPreInitializationEvent event) {
 		register(peanut, "peanut");
@@ -48,6 +56,10 @@ public class ItemLoader {
 		register(iPickaxe, "i_pickaxe");
 		register(iSword, "i_sword");
 		register(iSpade, "i_spade");
+		register(fAxe, "f_axe");
+		register(fPickaxe, "f_pickaxe");
+		register(fSword, "f_sword");
+		register(fSpade, "f_spade");
 
 	}
 
@@ -63,12 +75,16 @@ public class ItemLoader {
 		registerRender(jue);
 		registerRender(sAxe);
 		registerRender(iAxe);
+		registerRender(fAxe);
 		registerRender(sPickaxe);
 		registerRender(iPickaxe);
+		registerRender(fPickaxe);
 		registerRender(sSword);
 		registerRender(iSword);
+		registerRender(fSword);
 		registerRender(sSpade);
 		registerRender(iSpade);
+		registerRender(fSpade);
 	}
 
 	private static void register(Item item, String name) {

@@ -25,5 +25,12 @@ public class ItemToolSword extends ItemSword {
 			this.setCreativeTab(CreativeTabsLoader.tabPeanutCraft);
 		}
 	}
+	public static class F extends ItemToolSword {
+		public F() {
+			super(ItemLoader.FUHEBAN);
+			this.setUnlocalizedName("fSword");
+			this.setCreativeTab(CreativeTabsLoader.tabPeanutCraft);
+		}
+	}
 
 }

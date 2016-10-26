@@ -25,5 +25,12 @@ public class ItemToolSpade extends ItemSpade {
 			this.setCreativeTab(CreativeTabsLoader.tabPeanutCraft);
 		}
 	}
+	public static class F extends ItemToolSpade {
+		public F() {
+			super(ItemLoader.FUHEBAN);
+			this.setUnlocalizedName("fSpade");
+			this.setCreativeTab(CreativeTabsLoader.tabPeanutCraft);
+		}
+	}
 
 }

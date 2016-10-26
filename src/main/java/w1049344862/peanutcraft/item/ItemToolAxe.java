@@ -24,5 +24,12 @@ public class ItemToolAxe extends ItemAxe {
 			this.setCreativeTab(CreativeTabsLoader.tabPeanutCraft);
 		}
 	}
+	public static class F extends ItemToolAxe {
+		public F() {
+			super(ItemLoader.FUHEBAN);
+			this.setUnlocalizedName("fAxe");
+			this.setCreativeTab(CreativeTabsLoader.tabPeanutCraft);
+		}
+	}
 
 }

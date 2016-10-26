@@ -25,5 +25,12 @@ public class ItemToolPickaxe extends ItemPickaxe {
 			this.setCreativeTab(CreativeTabsLoader.tabPeanutCraft);
 		}
 	}
+	public static class F extends ItemToolPickaxe {
+		public F() {
+			super(ItemLoader.FUHEBAN);
+			this.setUnlocalizedName("fPickaxe");
+			this.setCreativeTab(CreativeTabsLoader.tabPeanutCraft);
+		}
+	}
 
 }

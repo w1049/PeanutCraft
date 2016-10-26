@@ -4,6 +4,7 @@ import java.util.Random;
 
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.BiomeEndDecorator;
 import net.minecraft.world.biome.BiomeGenPlains;
 import w1049344862.peanutcraft.block.BlockLoader;
 
@@ -22,10 +23,14 @@ public class BiomeGenPeanutShellPlains extends BiomeGenPlains{
     	this.theBiomeDecorator.reedsPerChunk = -999;
     	this.theBiomeDecorator.cactiPerChunk = -999;
     	this.theBiomeDecorator.sandPerChunk = -999;
-    	this.spawnableCreatureList.clear();
+        this.spawnableMonsterList.clear();
+        this.spawnableCreatureList.clear();
+        this.spawnableWaterCreatureList.clear();
+        this.spawnableCaveCreatureList.clear();
     	this.topBlock=BlockLoader.peanutShellBlock.getDefaultState();
     	this.fillerBlock=BlockLoader.peanutShellBlock.getDefaultState();
        	this.setHeight(height_LowPlains);
+        this.theBiomeDecorator = new BiomePeanutShellDecorator();
 	}
     public void decorate(World worldIn, Random rand, BlockPos pos)
     {
